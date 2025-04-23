@@ -1,0 +1,100 @@
+footer {
+    background: #333;
+    color: #fff;
+    position: absolute;
+    width: auto; 
+    display: flex;
+}
+
+.copy {
+    width: auto;
+    margin: auto;
+    text-align: left;
+    font-size: small;
+}
+
+.mycontainer {
+    width:auto;
+    overflow:auto;
+	padding:20px;
+    display:flex;
+	justify-content: space-between;
+}
+
+.mycontainer div {
+    width:33%; 
+	height:200px;
+    float:left;
+    padding: 0;
+}
+
+
+div img{
+    height: 100px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer -> Social Media Images */
+.sm1{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 75%;
+    left: 39%;
+}
+.sm2{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 75%;
+    left: 44%;
+}
+.sm3{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 75%;
+    left: 49%;
+}
+.sm4{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 75%;
+    left: 54%;
+}
+.sm5{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 75%;
+    left: 59%;
+}
+
+.chat-button {
+    background-color: #525ebe;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Position relative to contain the logo */
+}
+
+.chat {
+    width: 20px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    left: 10px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px; /* Adjust spacing between logo and text */
+}
+

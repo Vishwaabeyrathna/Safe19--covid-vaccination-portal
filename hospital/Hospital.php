@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="hospital details.css">
+</head>
+<body>
+<?php include '../views/header.php'; ?>
+
+    <br>
+    <div class="container">
+        <h1 class="heading">Hospital Details</h1>
+        <div class="Hospital-details">
+            <div class="box">
+                <div class="boxpic1" style="background-image: url('hemas.png');"></div>
+                <div class="boxtxt">
+                    <h2 class="Hname">Hemas Hospital</h2>
+                    <p class="Hdetails">COVID-19 vaccination protects you against severe disease and protects our healthcare system from being overwhelmed.</p>
+                    <div class="liitlebox">
+                        <button class="learn-more-btn">
+                            <a href="https://hemashospitals.com/hospitals">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="boxpic1" style="background-image: url('asiri.png');"></div>
+                <div class="boxtxt">
+                    <h2 class="Hname">Asiri Hospital</h2>
+                    <p class="Hdetails">COVID-19 vaccination protects you against severe disease and protects our healthcare system from being overwhelmed.</p>
+                    <div class="liitlebox">
+                        <button class="learn-more-btn">
+                            <a href="https://asirihealth.com/">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="boxpic1" style="background-image: url('nawaloka.jpg');"></div>
+                <div class="boxtxt">
+                    <h2 class="Hname">Nawaloka Hospital</h2>
+                    <p class="Hdetails">COVID-19 vaccination protects you against severe disease and protects our healthcare system from being overwhelmed.</p>
+                    <div class="liitlebox">
+                        <button class="learn-more-btn">
+                            <a href="https://www.nawaloka.com/">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="boxpic1" style="background-image: url('ninewalles.png');"></div>
+                <div class="boxtxt">
+                    <h2 class="Hname">NineWalles Hospital</h2>
+                    <p class="Hdetails">COVID-19 vaccination protects you against severe disease and protects our healthcare system from being overwhelmed.</p>
+                    <div class="liitlebox">
+                        <button class="learn-more-btn">
+                            <a href="https://www.ninewellshospital.lk/">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="boxpic1" style="background-image: url('download.png');"></div>
+                <div class="boxtxt">
+                    <h2 class="Hname">Durdans Hospital</h2>
+                    <p class="Hdetails">COVID-19 vaccination protects you against severe disease and protects our healthcare system from being overwhelmed.</p>
+                    <div class="liitlebox">
+                        <button class="learn-more-btn">
+                            <a href="https://www.durdans.com/">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="boxpic1" style="background-image: url('lanka.jpg');"></div>
+                <div class="boxtxt">
+                    <h2 class="Hname">Lanka Hospital</h2>
+                    <p class="Hdetails">COVID-19 vaccination protects you against severe disease and protects our healthcare system from being overwhelmed.</p>
+                    <div class="liitlebox">
+                        <button class="learn-more-btn">
+                            <a href="https://www.lankahospitals.com/">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php include '../views/footer.php'; ?>
+
+</body>
+</html>

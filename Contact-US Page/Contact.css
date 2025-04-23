@@ -1,0 +1,192 @@
+body {
+    background-color: #9be590e0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-left: 2em;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+    ;
+}
+
+.vaccine-details {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
+    gap: 35px;
+    grid-row-gap: 40px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    width: 280px;
+    height: 320px;
+    text-align: center;
+    transition: 0.3s;
+    background: linear-gradient(180deg, rgb(250, 250, 250), rgb(212, 212, 212));
+}
+
+.boxtxt{
+    width: fit-content;
+}
+
+.box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+
+
+.boxpic1 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+}
+
+.Vname {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.Vdetails {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+.container5 {
+    height: 22rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 4em;
+    background-color:none;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgb(250, 250, 250), rgb(215, 215, 215));
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.svg {
+    height: 7.5em;
+    padding-top: 3em;
+    transition: transform 0.75s ease;
+}
+
+.svg:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.txt {
+    font-size: 1.5rem;
+}
+
+.txt1 {
+    font-size: 0.9rem;
+}
+
+.contact{
+    
+    background-color: #e8f0e8;
+    padding: 50px;
+    text-align: center;
+}
+
+h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding-top: 150px;
+    color: #333;
+}
+
+.contact-form{
+    text-align: left;
+    border-color: #0c4c08; 
+    padding-top: 11.5em;
+}
+
+.contact-form {
+    font-size: 24px;
+    margin-bottom: 300px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: linear-gradient(#0c4c08,#197b12,#49a443);
+    background-clip: text;
+    color: transparent;
+}
+
+.from-group{
+    margin-bottom: 20px;
+}
+
+input,textarea{
+    width: 400px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    }
+
+button :hover{
+    background-color: #45a049;
+}
+
+label {
+    display: block; 
+    margin-bottom: 8px; }
+
+
+#dropdown {
+    padding: 8px; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+
+option {
+    width: auto;
+    height: auto;
+    font-size: 16px; }

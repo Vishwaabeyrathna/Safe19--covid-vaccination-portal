@@ -1,0 +1,145 @@
+/* ----------------------------------F A Q------------------------ */
+#faqname1{
+	position: absolute;
+	top: 30%;
+	left: 12%;
+}
+#faqname2{
+	position: absolute;
+	left: 80%;
+}
+#faqname3{
+	position: absolute;
+	left: 150%;
+}
+
+#faqimg{
+	position: absolute;
+	top: 60%;
+	left: 25%;
+}
+
+#question1{
+	position: absolute;
+	font-size: 30px;
+	top: 130%;
+	left: 20%;
+	height: 7%;
+	width: 52%;
+	background-color: #33424b;
+	color: whitesmoke;
+}
+
+#question1 button{
+	position: relative;
+	left: 20%;
+}
+
+#answer1{
+	position: absolute;
+	font-size: 20px;
+	top: 137%;
+	left: 20%;
+	height: 14%;
+	width: 52%;
+	background-color: #5bbcb4;
+	color: black;
+}
+#question2{
+	position: absolute;
+	font-size: 30px;
+	top: 155%;
+	left: 20%;
+	height: 7%;
+	width: 52%;
+	background-color: #33424b;
+	color: whitesmoke;
+}
+#answer2{
+	position: absolute;
+	font-size: 20px;
+	top: 162%;
+	left: 20%;
+	height: 29%;
+	width: 52%;
+	background-color: #5bbcb4;
+	color: black;
+}
+#question3{
+	position: absolute;
+	font-size: 30px;
+	top: 197%;
+	left: 20%;
+	height: 7%;
+	width: 52%;
+	background-color: #33424b;
+	color: whitesmoke;
+}
+#answer3{
+	position: absolute;
+	font-size: 20px;
+	top: 204%;
+	left: 20%;
+	height: 30%;
+	width: 52%;
+	background-color: #5bbcb4;
+	color: black;
+}
+//////////////////////
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-decoration: underline 4px;
+}
+
+
+.questions-container{
+		left: 20%;
+		position: absolute;
+		top: 125%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question{
+    border-bottom: 1px solid #fff;
+}
+.question button{
+    width: 100%;
+    background-color: #8acfcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #003247;
+    font-weight: 700;
+    cursor: pointer;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: #fff;
+}
+
+/*when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}

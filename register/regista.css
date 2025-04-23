@@ -1,0 +1,84 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.login-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    gap: 200px;
+    grid-row-gap: 40px;
+    margin: 100px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+
+
+    .boxpic {
+        width: 57%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+        position: relative;
+        left: 74px;
+    }
+
+
+.boxtxt {
+    padding: -20x;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.littlebox {
+    padding-top: 120px;
+}
+
+.login {
+    background-color: #ff910a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login a {
+    text-decoration: none;
+    color: black;
+}
+
+.login:hover {
+    background-color: #dc7900;
+}

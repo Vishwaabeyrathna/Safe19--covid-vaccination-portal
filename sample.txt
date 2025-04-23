@@ -1,0 +1,77 @@
+<?php
+
+require "db.php";
+
+if (isset($_POST["submit"])) {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    if (
+        empty($_POST["email"]) || empty($_POST["password"])
+    ) {
+        header("location: ../login.php?status=Fill All Fields !");
+        exit();
+    } else {
+
+        date_default_timezone_set('Asia/Colombo');
+
+        $date = date('Y-m-d');
+
+        if ($email === 'admin@gmail.com') {
+            $admin_password = 'admin';
+            if ($password === $admin_password) {
+                $_SESSION['loggedin'] = true;
+                $_SESSION['email'] = $email;
+                header("Location: ../Admin-Page/display_users.php");
+                exit();
+            } else {
+                header("location: ../login.php?status=Invalid Email or Password !");
+                exit();
+            }
+        } else {
+            $q1 = "SELECT * FROM `user` WHERE `email`='$email' AND `password`='$password'";
+            $rs1 = $conn->query($q1);
+            $n1 = $rs1->num_rows;
+            $d1= $rs1->fetch_assoc();
+
+            $q2 = "SELECT * FROM `doctors` WHERE `email`='$email' AND `password`='$password'";
+            $rs2 = $conn->query($q2);
+            $n2 = $rs2->num_rows;
+            $d2= $rs2->fetch_assoc();
+
+            $conn->close();
+
+            if ($n1 >= 1) {
+
+                if (isset($_SESSION["user"])) {
+                    header("location: ../index.php");
+                    exit();
+                } else {
+                    $_SESSION["user"] = $d1;
+                    header("location: ../index.php");
+                    exit();
+                }
+    
+            } else if ($n2 >= 1) {
+    
+                if (isset($_SESSION["doctor"])) {
+                    header("location: ../index.php");
+                    exit();
+                } else {
+                    $_SESSION["doctor"] = $d2;
+                    header("location: ../index.php");
+                    exit();
+                }
+    
+            } else if{
+                header("location: ../views/login.php?status=Invalid Email or Password !");
+                exit();
+            }
+        }
+    }
+} else {
+    header("location: ../views/login.php");
+    exit();
+}
+
+?>
